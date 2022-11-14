@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import '_partials/_colors';
+@import '_partials/_layout';
+@import '_partials/_typography';
+@import '_partials/_buttons';
+@import '_partials/_spacing';
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  scroll-behavior: smooth;
+  background-color: $white-dark;
+}
+
+
+
+svg,
+img {
+  display: block;
+  width: 100%;
+}
+
+.border {
+  border: 1px solid #f00;
+}
+
+@import '_partials/_menu';
