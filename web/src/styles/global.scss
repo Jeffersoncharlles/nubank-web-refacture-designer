@@ -21,6 +21,7 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
+  -webkit-font-smoothing: antialiased;
 
   scroll-behavior: smooth;
   background-color: $white-dark;
