@@ -1,9 +1,20 @@
+import { useState } from 'react';
+import { Button } from '../Button';
 import styles from './styles.module.scss'
 
 export const Header = () => {
+  const [scrollActive, setScrollActive] = useState(false)
+
+
+  const handleScroll = (e: any) => {
+    window.scrollY >= 50 ? setScrollActive(true) : setScrollActive(false)
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
 
   return (
-    <header className={styles.container}>
+    <header className={`${styles.container} ${scrollActive ? styles.active : ''}`} >
 
       <nav className={styles.container_mobile}>
         <div className={styles.bx} id="bx">
@@ -70,7 +81,7 @@ export const Header = () => {
         </div>
 
         <div className={styles.container_desktop_item2}>
-          <button>Quero ser Nubank</button>
+          <Button title='Quero ser Nubank' />
           <button>Login</button>
         </div>
       </nav>

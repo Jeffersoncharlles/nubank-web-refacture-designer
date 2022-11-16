@@ -1,0 +1,24 @@
+@import '../../styles/_partials/_mixins.scss';
+
+.container {
+  background: linear-gradient(220.94deg, $secondary-normal 14.43%, $primary-normal 85.28%);
+  border-radius: 16px;
+  cursor: pointer;
+  padding: .75rem 2rem;
+  border: 0;
+  box-shadow: 0px 43px 60px rgba(169, 80, 196, 0.14),
+    0px 12.9632px 18.0882px rgba(169, 80, 196, 0.0912224),
+    0px 5.38427px 7.51293px rgba(169, 80, 196, 0.07),
+    0px 1.94738px 2.71728px rgba(169, 80, 196, 0.0487776);
+
+  transition: .3s ease;
+  color: $white-light;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 43px 48px rgba(169, 80, 196, 0.2),
+      0px 12.9632px 14.4706px rgba(169, 80, 196, 0.130318),
+      0px 5.38427px 6.01034px rgba(169, 80, 196, 0.1),
+      0px 1.94738px 2.17382px rgba(169, 80, 196, 0.0696822);
+  }
+}

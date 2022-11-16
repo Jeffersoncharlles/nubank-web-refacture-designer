@@ -26,7 +26,16 @@ body {
   background-color: $white-dark;
 }
 
+a {
+  @include typeface-2(p2, desktop);
+  text-decoration: none;
+  color: $black-normal;
+  transition: .5s ease;
 
+  &:hover {
+    opacity: .9;
+  }
+}
 
 svg,
 img {
@@ -37,5 +46,3 @@ img {
 .border {
   border: 1px solid #f00;
 }
-
-@import '_partials/_menu';
