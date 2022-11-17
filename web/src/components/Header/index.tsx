@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Button } from '../Button';
+import { Dropdown } from './Dropdown';
 import styles from './styles.module.scss'
+import { menuDropDown } from '../../utils/dropdown'
 
 export const Header = () => {
   const [scrollActive, setScrollActive] = useState(false)
@@ -11,6 +13,7 @@ export const Header = () => {
   }
 
   window.addEventListener('scroll', handleScroll);
+
 
 
   return (
@@ -32,50 +35,10 @@ export const Header = () => {
 
           </div>
           <ul className={styles.menu}>
-            <li>
-              <a href="" className={styles.nav_link}>Nubank</a>
-              <ul className={styles.dropdown_menu}>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>O Nu</a>
-                </li>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>Carreiras</a>
-                </li>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>Impressa</a>
-                </li>
-              </ul>
-            </li>
 
-            <li>
-              <a href="" className={styles.nav_link}>Conta Digital</a>
-              <ul className={styles.dropdown_menu}>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>Crie sua conta</a>
-                </li>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>Transferências</a>
-                </li>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>Rendimento</a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="" className={styles.nav_link}>Pra você</a>
-              <ul className={styles.dropdown_menu}>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>Comunidade</a>
-                </li>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>Rewards</a>
-                </li>
-                <li className={styles.dropdown_menu_item}>
-                  <a href="" className={styles.dropdown_menu_link}>Novidades</a>
-                </li>
-              </ul>
-            </li>
+            {menuDropDown.map((item) => (
+              <Dropdown key={item.title} title={item.title} navMenu={item.navMenu} />
+            ))}
 
           </ul>
         </div>

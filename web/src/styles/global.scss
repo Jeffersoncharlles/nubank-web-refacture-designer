@@ -6,10 +6,14 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: 0;
+
+}
+
 @import '_partials/_colors';
 @import '_partials/_layout';
 @import '_partials/_typography';
-@import '_partials/_buttons';
 @import '_partials/_spacing';
 
 
@@ -18,9 +22,9 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 97%;
   height: 100vh;
-  position: relative;
+
   -webkit-font-smoothing: antialiased;
 
   scroll-behavior: smooth;
@@ -36,6 +40,11 @@ a {
   &:hover {
     opacity: .9;
   }
+}
+
+button {
+  cursor: pointer;
+  border: 0;
 }
 
 svg,
