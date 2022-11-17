@@ -10,10 +10,21 @@
   transition: .5s ease;
 
   &_mobile {
+
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: .625rem 1.5rem;
+
     display: none;
 
+    >a {
+      z-index: 10;
+    }
+
     @include responsive(sm) {
-      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
@@ -33,14 +44,7 @@
       justify-content: flex-start;
       align-items: center;
 
-      .logo {
-        width: 48px;
-        height: 48px;
-        background: #333;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+
 
       .menu {
         list-style: none;
@@ -56,6 +60,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+
     }
 
 
@@ -76,10 +81,90 @@
 }
 
 
-.menu_mobile {
-  display: none;
 
-  @include responsive(sm) {
-    display: block;
+
+.bx {
+  width: 36px;
+  height: 36px;
+  position: relative;
+
+  cursor: pointer;
+  z-index: 10;
+  transition: .7s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    transition: .7s ease;
+
+    top: 40%;
+    left: 17%;
+
+    background-color: $primary-normal;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    transition: .7s ease;
+
+    top: 64%;
+    left: 17%;
+
+    background-color: $primary-normal;
+  }
+}
+
+.active_bx {
+  width: 36px;
+  height: 36px;
+  position: relative;
+
+  cursor: pointer;
+  z-index: 10;
+  transition: .7s ease;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+
+    top: 50%;
+    left: 17%;
+
+    transform: rotate(-135deg);
+
+    background-color: $primary-normal;
+    transition: .7s ease;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    transition: .7s ease;
+
+    top: 50%;
+    left: 17%;
+    transform: rotate(-405deg);
+
+    background-color: $primary-normal;
+  }
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }

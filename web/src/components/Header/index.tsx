@@ -3,9 +3,12 @@ import { Button } from '../Button';
 import { Dropdown } from './Dropdown';
 import styles from './styles.module.scss'
 import { menuDropDown } from '../../utils/dropdown'
+import { mobileMenu } from '../../utils/dropdown'
+import { NavMobile } from './NavMobile';
 
 export const Header = () => {
   const [scrollActive, setScrollActive] = useState(false)
+  const [showingBurger, setShowingBurger] = useState(false)
 
 
   const handleScroll = (e: any) => {
@@ -14,13 +17,17 @@ export const Header = () => {
 
   window.addEventListener('scroll', handleScroll);
 
+  const handleShowingBurger = () => {
+    setShowingBurger(!showingBurger)
+  }
+
 
 
   return (
     <header className={`${styles.container} ${scrollActive ? styles.active : ''}`} >
 
       <nav className={styles.container_mobile}>
-        <div className={styles.bx} id="bx">
+        <div className={showingBurger ? styles.active_bx : styles.bx} id="bx" onClick={handleShowingBurger}>
 
         </div>
         <div className={styles.logo}>
@@ -45,39 +52,11 @@ export const Header = () => {
 
         <div className={styles.container_desktop_item2}>
           <Button title='Quero ser Nubank' />
-          <button>Login</button>
+          <button className={styles.login}>Login</button>
         </div>
       </nav>
 
-      <nav className={styles.menu_mobile}>
-        <ul className={styles.menu_mobile_list}>
-          <li>
-            <a href="" className={styles.menu_mobile_list_link}>
-              Nubank
-            </a>
-          </li>
-          <li>
-            <a href="" className={styles.menu_mobile_list_link}>
-              Conta Digital
-            </a>
-          </li>
-          <li>
-            <a href="" className={styles.menu_mobile_list_link}>
-              Pra você
-            </a>
-          </li>
-          <li>
-            <a href="" className={styles.menu_mobile_list_link}>
-              Quero ser Nubank
-            </a>
-          </li>
-          <li>
-            <a href="" className={styles.menu_mobile_list_link}>
-              Redes Sociais
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <NavMobile data={mobileMenu} showMe={showingBurger} />
     </header>
   );
 }

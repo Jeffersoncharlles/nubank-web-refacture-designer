@@ -1,0 +1,63 @@
+@import '../../../styles/_partials/_mixins.scss';
+
+
+
+.menu_mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white-normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s ease;
+
+  transform: translate3d(0, -100px, 0);
+
+  transition: 1s ease;
+
+
+  .menu_mobile_list {
+    max-width: $container-xl;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+
+    .menu_mobile_list_link {
+      display: inline-block;
+      @include typeface-1(h3, desktop);
+      color: $gray-2;
+      padding: 1rem 1.5rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 1rem;
+        width: 0%;
+        height: 2px;
+        background-color: $secondary-normal;
+
+        transition: 1s ease;
+      }
+
+      &:hover {
+        color: $primary-normal;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.active_mobile {
+  opacity: 1;
+  pointer-events: all;
+}

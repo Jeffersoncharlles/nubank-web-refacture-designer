@@ -3,3 +3,12 @@ export const menuDropDown = [
   { title: 'Conta Digital', navMenu: [{ navTile: 'Crie sua conta' }, { navTile: 'Transferências' }, { navTile: 'Rendimento' }] },
   { title: 'Pra você', navMenu: [{ navTile: 'Comunidade' }, { navTile: 'Rewards' }, { navTile: 'Novidades' }] },
 ]
+
+
+export const mobileMenu = [
+  { title: 'Nubank', link: '' },
+  { title: 'Conta Digital', link: '' },
+  { title: 'Pra você', link: '' },
+  { title: 'Quero ser Nubank', link: '' },
+  { title: 'Redes Sociais', link: '' },
+]

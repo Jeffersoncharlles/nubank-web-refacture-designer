@@ -1,5 +1,5 @@
 import styles from './styles.module.scss'
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { useState } from 'react';
 
 interface Props {
@@ -16,27 +16,31 @@ export const Dropdown = ({ title, navMenu }: Props) => {
     setOpenDropdown(!openDropdown);
   };
   return (
-    // <DropdownMenu.Root >
-    //   <DropdownMenu.Trigger className={styles.menu_item} asChild>
-    //     <a className={styles.nav_link_desktop} >{title}</a>
-    //   </DropdownMenu.Trigger>
+    // <NavigationMenu.Root>
+    //   <NavigationMenu.List >
+    //     <NavigationMenu.Item className={styles.menu_item}>
+    //       <NavigationMenu.Trigger>
+    //         <a className={styles.nav_link_desktop} >{title}</a>
+    //       </NavigationMenu.Trigger>
+    //       <NavigationMenu.Content>
 
+    //         {navMenu.map((name, key) => (
+    //           <li
+    //             key={name.navTile}
+    //             className={styles.dropdown_item}
+    //           >
+    //             <a className={styles.nav_link_dropdown}>  {name.navTile}</a>
+    //           </li>
+    //         ))}
 
-    //   <DropdownMenu.Content className={styles.nav_link_desktop_dropdown_menu}>
-    //     {navMenu && <>
-    //       {navMenu.map((name, key) => (
-    //         <DropdownMenu.Item
-    //           key={name.navTile}
-    //           className={styles.dropdown_item}
-    //         >
-    //           <a className={styles.nav_link_dropdown}>  {name.navTile}</a>
-    //         </DropdownMenu.Item>
-    //       ))}
+    //       </NavigationMenu.Content>
+    //     </NavigationMenu.Item>
 
-    //     </>}
+    //   </NavigationMenu.List>
 
-    //   </DropdownMenu.Content>
-    // </DropdownMenu.Root>
+    //   <NavigationMenu.Viewport />
+    // </NavigationMenu.Root>
+
 
     <li className={styles.menu_item} id="menu-item-1" data-aos="fade-up" data-aos-delay="200">
       <a
