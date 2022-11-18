@@ -1,12 +1,13 @@
 
 import { Header } from "./components/Header"
+import { Hero } from "./pages/Hero"
 
 export const App = () => {
 
   return (
     <div >
       <Header />
-      <div style={{ height: 2000 }}></div>
+      <Hero />
     </div>
   )
 }

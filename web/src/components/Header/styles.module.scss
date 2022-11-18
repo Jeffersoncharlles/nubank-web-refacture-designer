@@ -4,29 +4,11 @@
   width: 100%;
   background-color: transparent;
   box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  transition: .5s ease;
 
   position: fixed;
   z-index: 10;
-  transition: .5s ease;
 
-  &_mobile {
-
-    max-width: $container-xl;
-    margin: 0 auto;
-    padding: .625rem 1.5rem;
-
-    display: none;
-
-    >a {
-      z-index: 10;
-    }
-
-    @include responsive(sm) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
 
   &_desktop {
     max-width: $container-xl;
@@ -69,6 +51,38 @@
   }
 }
 
+.container_mobile {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: .625rem 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  display: none;
+
+  a {
+    z-index: 11;
+  }
+
+  .logo2 {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+  }
+
+  @include responsive(sm) {
+    display: flex;
+
+  }
+}
+
 .active_header {
   background-color: $white-normal;
   box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08),
@@ -77,7 +91,9 @@
     0px 2.30969px 3.62304px rgba(169, 80, 196, 0.0278729);
 }
 
-
+.login {
+  @extend .ml-2;
+}
 
 
 .bx {
@@ -159,9 +175,9 @@
 .logo {
   width: 48px;
   height: 48px;
+  border-radius: 8px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
 }

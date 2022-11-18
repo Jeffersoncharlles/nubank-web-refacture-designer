@@ -26,6 +26,22 @@
     display: flex;
     flex-direction: column;
 
+    svg {
+      width: 2.25rem;
+      height: 2.25rem;
+
+      path {
+        stroke: $gray-7;
+        transition: .7s ease;
+      }
+
+      &:hover {
+        path {
+          stroke: $primary-normal;
+        }
+      }
+    }
+
 
     .menu_mobile_list_link {
       display: inline-block;
@@ -33,6 +49,8 @@
       color: $gray-2;
       padding: 1rem 1.5rem;
       position: relative;
+
+      @extend .mb-1;
 
       &::after {
         content: "";
@@ -42,6 +60,7 @@
         width: 0%;
         height: 2px;
         background-color: $secondary-normal;
+        z-index: -1;
 
         transition: 1s ease;
       }
@@ -60,4 +79,16 @@
 .active_mobile {
   opacity: 1;
   pointer-events: all;
+}
+
+
+.socials {
+  @extend .mt-3;
+  @extend .flex_center;
+
+  a {
+    @extend .mx-1;
+
+
+  }
 }

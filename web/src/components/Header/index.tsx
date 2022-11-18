@@ -5,9 +5,9 @@ import styles from './styles.module.scss'
 import { menuDropDown } from '../../utils/dropdown'
 import { mobileMenu } from '../../utils/dropdown'
 import { NavMobile } from './NavMobile';
-// import Logo from '../../assets/logonu.svg'
+import LogoNU from '../../assets/logonu.svg'
 
-import { Logo } from '../../assets/Logo'
+import Logo from '../../assets/Logo'
 
 
 
@@ -62,10 +62,8 @@ export const Header = () => {
 
       <nav className={styles.container_mobile}>
         <div className={showingBurger ? styles.active_bx : styles.bx} id="bx" onClick={handleShowingBurger}></div>
-        <div className={styles.logo}>
-          <a href="/">
-            <Logo />
-          </a>
+        <div className={styles.logo2}>
+          <img src={LogoNU} alt="" />
         </div>
         <a href="">Login</a>
       </nav>
