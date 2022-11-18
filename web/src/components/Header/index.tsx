@@ -7,8 +7,8 @@ import { mobileMenu } from '../../utils/dropdown'
 import { NavMobile } from './NavMobile';
 // import Logo from '../../assets/logonu.svg'
 
-import { ReactComponent as Logo } from '../../assets/logonu.svg'
-import { ReactComponent as LogoMobile } from '../../assets/logonu.svg'
+import { Logo } from '../../assets/Logo'
+
 
 
 
@@ -34,6 +34,7 @@ export const Header = () => {
 
   return (
     <header className={`${styles.container} ${scrollActive ? styles.active_header : ''}`} >
+
 
 
 
@@ -63,11 +64,12 @@ export const Header = () => {
         <div className={showingBurger ? styles.active_bx : styles.bx} id="bx" onClick={handleShowingBurger}></div>
         <div className={styles.logo}>
           <a href="/">
-            <LogoMobile />
+            <Logo />
           </a>
         </div>
         <a href="">Login</a>
       </nav>
+
 
       <NavMobile data={mobileMenu} showMe={showingBurger} />
     </header>
