@@ -5,6 +5,12 @@ import styles from './styles.module.scss'
 import { menuDropDown } from '../../utils/dropdown'
 import { mobileMenu } from '../../utils/dropdown'
 import { NavMobile } from './NavMobile';
+// import Logo from '../../assets/logonu.svg'
+
+import { ReactComponent as Logo } from '../../assets/logonu.svg'
+import { ReactComponent as LogoMobile } from '../../assets/logonu.svg'
+
+
 
 export const Header = () => {
   const [scrollActive, setScrollActive] = useState(false)
@@ -13,6 +19,7 @@ export const Header = () => {
 
   const handleScroll = (e: any) => {
     window.scrollY >= 50 ? setScrollActive(true) : setScrollActive(false)
+
   }
 
   window.addEventListener('scroll', handleScroll);
@@ -23,37 +30,43 @@ export const Header = () => {
 
 
 
+
+
   return (
-    <header className={`${styles.container} ${scrollActive ? styles.active : ''}`} >
+    <header className={`${styles.container} ${scrollActive ? styles.active_header : ''}`} >
 
-      <nav className={styles.container_mobile}>
-        <div className={showingBurger ? styles.active_bx : styles.bx} id="bx" onClick={handleShowingBurger}>
 
-        </div>
-        <div className={styles.logo}>
-
-        </div>
-        <a href="">Login</a>
-      </nav>
 
       <nav className={styles.container_desktop}>
         <div className={styles.container_desktop_item1}>
           <div className={styles.logo}>
-
+            <a href="/">
+              <Logo />
+            </a>
           </div>
-          <ul className={styles.menu}>
 
+          <ul className={styles.menu}>
             {menuDropDown.map((item) => (
               <Dropdown key={item.title} title={item.title} navMenu={item.navMenu} />
             ))}
-
           </ul>
+
         </div>
 
         <div className={styles.container_desktop_item2}>
           <Button title='Quero ser Nubank' />
           <button className={styles.login}>Login</button>
         </div>
+      </nav>
+
+      <nav className={styles.container_mobile}>
+        <div className={showingBurger ? styles.active_bx : styles.bx} id="bx" onClick={handleShowingBurger}></div>
+        <div className={styles.logo}>
+          <a href="/">
+            <LogoMobile />
+          </a>
+        </div>
+        <a href="">Login</a>
       </nav>
 
       <NavMobile data={mobileMenu} showMe={showingBurger} />

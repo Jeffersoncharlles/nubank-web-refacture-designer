@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLDListElement> {
   data: {
     title: string;
     link: string;

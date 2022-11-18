@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { useState } from 'react';
 
-interface Props {
+interface Props extends React.HTMLAttributes<HTMLLIElement> {
   title: string;
   navMenu: {
     navTile: string
