@@ -1,0 +1,94 @@
+$width_card: 340px;
+$height_card: 0.64 * $width_card;
+
+
+.div_card {
+  perspective: 500px;
+  margin-left: 7.5rem;
+
+  @include responsive(sm) {
+    margin-left: 1.5rem;
+
+  }
+}
+
+
+@keyframes flip_card {
+  0% {
+    transform: rotateX(-10deg) rotateY(10deg) rotateY(-15deg);
+  }
+
+  40% {
+    transform: rotateX(0deg) rotateY(20deg);
+  }
+
+  60% {
+    transform: rotateX(180deg) rotateY(20deg);
+  }
+
+  100% {
+    transform: rotateX(190deg) rotateY(10deg) rotateY(15deg);
+  }
+}
+
+@keyframes change_bg_card {
+
+  0%,
+  49% {
+    background-image: url("../../assets/nubank.svg");
+    background-size: cover;
+  }
+
+  50%,
+  100% {
+    background-image: url("../../assets/nubank-verse-revert.svg");
+    background-size: cover;
+  }
+}
+
+
+@keyframes iconsHome {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
+
+
+//==========================bg=========================//
+
+
+.bg-home-rect1 {
+  animation: bg-home-react 7s ease 0s infinite alternate;
+}
+
+.bg-home-rect2 {
+  animation: bg-home-react 3s ease 0.5s infinite alternate;
+
+
+}
+
+.bg-home-rect3 {
+  animation: bg-home-react 3s ease 1s infinite alternate;
+
+
+}
+
+.bg-home-rect4 {
+  animation: bg-home-react 3s ease 1.5s infinite alternate;
+
+
+}
+
+@keyframes bg-home-react {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 30px, 0);
+  }
+}

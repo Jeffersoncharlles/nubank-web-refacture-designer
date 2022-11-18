@@ -24,6 +24,10 @@
   div {
     @extend .flex_start;
 
+    button {
+      cursor: pointer;
+    }
+
     a {
       img {
         width: 36px;
@@ -31,5 +35,78 @@
         @extend .ml-1;
       }
     }
+  }
+}
+
+.flex_item_3 {
+  @extend .div_card;
+  @extend .py-4;
+  @extend .flex_center;
+
+  img {
+    width: 72px;
+    height: 72px;
+  }
+
+  position: relative;
+
+
+
+  .card {
+    width: $width_card;
+    height: $height_card;
+    border-radius: 12px;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+
+    background-color: red;
+
+    animation: flip_card 12s linear infinite alternate,
+      change_bg_card 12s linear infinite alternate;
+
+    z-index: -1;
+  }
+}
+
+.icon_card_hero {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  z-index: 11;
+
+  animation: iconsHome 7s ease .5s infinite alternate;
+  @extend .box_shadows;
+}
+
+
+.icon_card_contact {
+  position: absolute;
+  top: 350px;
+  left: 280px;
+  z-index: 11;
+
+  animation: iconsHome 7s ease 1s infinite alternate;
+
+  @extend .box_shadows;
+
+  @include responsive(sm) {
+    top: 280px;
+    left: 280px;
+  }
+}
+
+.icon_card_mobile {
+  position: absolute;
+  top: 150px;
+  left: -40px;
+  z-index: 11;
+
+  @extend .box_shadows;
+
+  animation: iconsHome 7s ease 2.5s infinite alternate;
+
+  @include responsive(sm) {
+    top: 300px;
+    left: 80px;
   }
 }

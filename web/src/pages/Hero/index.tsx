@@ -3,6 +3,10 @@ import styles from './styles.module.scss'
 import AppStore from '../../assets/appstore.svg'
 import PlayStore from '../../assets/playstore.svg'
 
+import IconCard from '../../assets/icon-card.svg'
+import IconMobile from '../../assets/icon-mobile.svg'
+import IconContact from '../../assets/icon-contactless.svg'
+
 export const Hero = () => {
 
   return (
@@ -23,7 +27,10 @@ export const Hero = () => {
         </div>
       </section>
       <section className={styles.flex_item_3}>
-
+        <img src={IconCard} alt="" className={styles.icon_card_hero} />
+        <img src={IconMobile} alt="" className={styles.icon_card_mobile} />
+        <img src={IconContact} alt="" className={styles.icon_card_contact} />
+        <div className={styles.card}></div>
       </section>
     </main>
   );

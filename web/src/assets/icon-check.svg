@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-check" clip-path="url(#clip0_1222_18745)">
+<g id="Group 454">
+<circle id="Ellipse 152" cx="20" cy="20" r="20" fill="#FEFBFF"/>
+<path id="Vector" d="M28.421 14.7368L16.842 26.3158L11.5789 21.0526" stroke="url(#paint0_linear_1222_18745)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1222_18745" x1="25.8104" y1="16.3" x2="19.0698" y2="27.6014" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A950C4"/>
+<stop offset="1" stop-color="#82269E"/>
+</linearGradient>
+<clipPath id="clip0_1222_18745">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

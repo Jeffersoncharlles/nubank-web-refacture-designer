@@ -11,7 +11,7 @@
 </p>
 
 <h1 align='center'>
-
+  <img src='./screen/chrome_e6qzmpq3wd.gif' width="480">
 </h1>
 
 ## Getting Started
@@ -30,6 +30,7 @@ yarn dev
 
 This Front-End project was developed using the following technologies:
 
+-   [Vite Js][vitejs]
 -   [Typescript][typescript]
 -   [Sass][sass]
 -   [Phosphor Icons][phosphoricons]
