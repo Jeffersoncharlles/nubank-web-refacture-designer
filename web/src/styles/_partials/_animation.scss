@@ -59,36 +59,3 @@ $height_card: 0.64 * $width_card;
 
 
 //==========================bg=========================//
-
-
-.bg-home-rect1 {
-  animation: bg-home-react 7s ease 0s infinite alternate;
-}
-
-.bg-home-rect2 {
-  animation: bg-home-react 3s ease 0.5s infinite alternate;
-
-
-}
-
-.bg-home-rect3 {
-  animation: bg-home-react 3s ease 1s infinite alternate;
-
-
-}
-
-.bg-home-rect4 {
-  animation: bg-home-react 3s ease 1.5s infinite alternate;
-
-
-}
-
-@keyframes bg-home-react {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 30px, 0);
-  }
-}

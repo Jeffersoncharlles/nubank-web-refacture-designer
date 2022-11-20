@@ -1,5 +1,5 @@
 import styles from './styles.module.scss'
-import BackgroundBG from '../../assets/BG'
+import BackgroundBG from './BG'
 
 export const Background = () => {
 

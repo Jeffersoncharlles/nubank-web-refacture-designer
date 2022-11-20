@@ -19,10 +19,5 @@
     @include responsive(sm) {
       width: 400%;
     }
-
-    @extend .bg-home-rect1;
-    @extend .bg-home-rect2;
-    @extend .bg-home-rect3;
-    @extend .bg-home-rect4;
   }
 }

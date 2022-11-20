@@ -35,9 +35,6 @@ export const Header = () => {
   return (
     <header className={`${styles.container} ${scrollActive ? styles.active_header : ''}`} >
 
-
-
-
       <nav className={styles.container_desktop}>
         <div className={styles.container_desktop_item1}>
           <div className={styles.logo}>
