@@ -1,0 +1,31 @@
+@import '../../styles/_partials/_mixins.scss';
+
+
+.container {
+  max-width: $container-xl;
+  margin: 0 auto;
+
+
+  padding: 96px 24px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  .mobile {
+    @include responsive(sm) {}
+  }
+}
+
+.swiper_slider {}
+
+
+.swiper_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}

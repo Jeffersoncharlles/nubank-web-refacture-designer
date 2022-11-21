@@ -1,0 +1,62 @@
+@import '../../styles/_partials/mixins';
+
+.container {
+  @extend .containers;
+}
+
+
+.best {
+  @extend .flex_center;
+  @extend .px-3;
+  @extend .py-4;
+  position: relative;
+  border-radius: 3.125rem;
+  background-color: $white-normal;
+
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, 0); //passando a referencia para o meio do objeto
+    width: 7.75rem;
+    height: 32px;
+
+    background-image: url('../../assets/entail.svg');
+    background-repeat: no-repeat;
+
+  }
+
+  @include responsive(sm) {
+    flex-direction: column
+  }
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @extend .flex_item_auto;
+
+    padding: 1rem;
+    margin: .5rem .5rem;
+
+    @include responsive(sm) {
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      @extend .mt-2;
+      @extend .body;
+    }
+
+    img {
+      @extend .w_auto;
+      @extend .icons;
+    }
+  }
+}

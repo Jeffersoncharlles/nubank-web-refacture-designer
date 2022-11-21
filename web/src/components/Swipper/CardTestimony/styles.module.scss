@@ -1,0 +1,30 @@
+@import '../../../styles/_partials/mixins';
+
+.container_card {
+  max-width: 26.25rem;
+  padding: 1.5rem 2.25rem;
+  border-radius: 50px;
+  background-color: $white-normal;
+  margin: 0px 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  img {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h4 {
+    @extend .my-1;
+  }
+
+  p {
+    @extend .my-1;
+  }
+}

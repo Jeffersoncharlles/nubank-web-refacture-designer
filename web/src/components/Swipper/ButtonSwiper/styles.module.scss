@@ -1,0 +1,30 @@
+.button_next {
+  position: absolute;
+  right: 32px;
+  top: 24px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background: transparent;
+
+  background-image: url('../../../assets/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 11;
+}
+
+.button_prev {
+  position: absolute;
+  right: 88px;
+  top: 24px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  cursor: pointer;
+  background-image: url('../../../assets/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+  z-index: 11;
+
+}

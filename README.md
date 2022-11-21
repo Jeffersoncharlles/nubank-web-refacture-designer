@@ -12,6 +12,7 @@
 
 <h1 align='center'>
   <img src='./screen/chrome_e6qzmpq3wd.gif' width="480">
+  <img src='./screen/mXhIcTA3Qz.jpg'  height="720">
 </h1>
 
 ## Getting Started

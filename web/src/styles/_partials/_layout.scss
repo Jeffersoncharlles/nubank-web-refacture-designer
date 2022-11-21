@@ -199,3 +199,16 @@ $container-sm: 540px;
     }
   }
 }
+
+.icons {
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.15));
+  transition: .5s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+
+//++++++++++++++++++++++++++ ICONS ***************************//
