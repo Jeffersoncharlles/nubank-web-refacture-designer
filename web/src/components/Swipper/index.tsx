@@ -11,21 +11,10 @@ import 'swiper/css/autoplay';
 import { depoimentos } from '../../utils/helpers'
 import { CardTestimony } from './CardTestimony';
 import SlideNextButton from './ButtonSwiper';
-import { useEffect, useState } from 'react';
+
 
 export default () => {
-  const [mobile, setMobile] = useState(false)
 
-  let mobileWidth = window.screen.width === 910
-
-  useEffect(() => {
-    if (mobileWidth) {
-      setMobile(true)
-    } else {
-      setMobile(false)
-    }
-
-  }, [mobileWidth])
 
   return (
     <div className={styles.container}>
@@ -33,6 +22,16 @@ export default () => {
       <Swiper
         modules={[Autoplay]}
         className={styles.swiper_container}
+        breakpoints={{
+          640: {
+            width: 640,
+            slidesPerView: 1
+          },
+          960: {
+            width: 960,
+            slidesPerView: 2
+          }
+        }}
         spaceBetween={40}
         grabCursor // mãozinha no item
         pagination={{
@@ -44,24 +43,22 @@ export default () => {
           nextEl: '.button-next',
           prevEl: '.button-prev'
         }}
-        slidesPerView={mobile ? 1 : 2} //quantos ver
+        slidesPerView="auto" //quantos ver
         loop={true}
         autoplay={{
           delay: 3000,
           pauseOnMouseEnter: true,
           disableOnInteraction: false
         }}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={(swiper) => console.log(swiper)}
       >
-
+        <SlideNextButton next />
+        <SlideNextButton prev />
         {depoimentos.map((item) => (
           <SwiperSlide key={item.fullName} className={styles.swiper_slider}>
             <CardTestimony data={item} />
           </SwiperSlide>
         ))}
-        <SlideNextButton next />
-        <SlideNextButton prev />
+
       </Swiper>
     </div>
   );

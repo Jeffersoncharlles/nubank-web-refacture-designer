@@ -1,0 +1,6 @@
+@import '../../styles/_partials/mixins';
+
+
+.container {
+  @extend .containers;
+}

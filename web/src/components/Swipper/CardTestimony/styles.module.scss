@@ -27,4 +27,8 @@
   p {
     @extend .my-1;
   }
+
+  @include responsive(sm) {
+    max-width: 100%;
+  }
 }

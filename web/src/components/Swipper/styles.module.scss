@@ -15,9 +15,10 @@
 
   position: relative;
 
-  .mobile {
-    @include responsive(sm) {}
+  @include responsive(sm) {
+    flex-direction: column;
   }
+
 }
 
 .swiper_slider {}
@@ -27,5 +28,11 @@
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
+
+  @include responsive(sm) {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
