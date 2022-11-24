@@ -1,5 +1,5 @@
 
-import { Background } from "./components/Background"
+import { Background } from "./components/SVGS/Background"
 import { Header } from "./components/Header"
 import { Best } from "./pages/Best"
 import { DigitalAccount } from "./pages/DigitalAccount"

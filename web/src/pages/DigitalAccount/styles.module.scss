@@ -3,4 +3,100 @@
 
 .container {
   @extend .containers;
+
+
+}
+
+.mockup{
+  svg {
+      height: 100%;
+      width: 100%;
+    }
+
+  @extend .p-3;
+}
+
+.appDigital{
+  @extend .flex_item_1;
+
+    h2 {
+      @extend .mt-2;
+    }
+
+    >p {
+      @extend .my-2;
+    }
+
+    .list {
+      @extend .my-2;
+
+      li {
+        list-style: none;
+        position: relative;
+
+        padding: .5rem .5rem .5rem 4.5rem;
+        @extend .mt-3;
+
+        &::after {
+          content: attr(data-after);
+          position: absolute;
+
+          display: block;
+          width: 42px;
+          height: 42px;
+          top: 12px;
+          left: 8px;
+        }
+
+        &:nth-child(1) {
+          @extend .bg_icon_mobile;
+
+        }
+
+        &:nth-child(2) {
+          @extend .bg_icon_time;
+
+        }
+
+        &:nth-child(3) {
+          @extend .bg_icon_config;
+
+        }
+      }
+    }
+
+    a {
+      display: inline-block;
+      color: $primary-normal;
+      background-image: url('../../assets/icon-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: 0% 50%;
+      font-size: 1.125rem;
+      padding: 1rem 1rem 1rem 2.5rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 75%;
+        left: 56px;
+        background-color: $secondary-light;
+        height: 2px;
+        width: 0%;
+        border-radius: 2px;
+        transition: .5s ease;
+
+      }
+
+      &:hover {
+        opacity: .8;
+        padding-left: 4rem;
+        background-position: 8px 50%;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
 }

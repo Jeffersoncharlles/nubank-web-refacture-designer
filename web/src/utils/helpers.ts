@@ -23,3 +23,9 @@ export const depoimentos = [
   { avatar: 'https://i.pravatar.cc/150?img=48', fullName: 'Anna Keller', contentBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque vulputate at mattis nibh nulla est. Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.' },
   { avatar: 'https://i.pravatar.cc/150?img=21', fullName: 'Marcela Sousa', contentBody: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque vulputate at mattis nibh nulla est. Pharetra, eget purus tortor nibh porta ipsum enim urna viverra.' },
 ]
+
+export const totalApp = [
+  { title: 'Tudo na palma da sua mão', body: 'Conta digital.Você resolve tudo pelo App.Tudo.' },
+  { title: 'Sem filas, sem burocracia', body: 'Investimentos no melhor suporte para isso.Não tem filas.Economia de tempo.' },
+  { title: 'Configure tudo no App', body: 'Toda a Configuração e acesso aos novos recurso a um clique de distancia' },
+]
