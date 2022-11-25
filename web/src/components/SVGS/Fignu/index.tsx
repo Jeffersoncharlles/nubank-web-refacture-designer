@@ -2020,7 +2020,7 @@ function Icon({...rest }:Props) {
             d='M529 596l-33 33-15-15'
           ></path>
         </g>
-        <g id='fignu2-icon3' className='fignu2-icon3'>
+        <g id='fignu2-icon2' className='fignu2-icon2'>
           <g id='Rectangle 884' filter='url(#filter3_dddd_1169_1)'>
             <rect
               width='140'
@@ -2049,7 +2049,7 @@ function Icon({...rest }:Props) {
             ></path>
           </g>
         </g>
-        <g id='fignu2-icon5' className='fignu2-icon5'>
+        <g id='fignu2-icon3' className='fignu2-icon3'>
           <g id='Rectangle 879' filter='url(#filter4_dddd_1169_1)'>
             <rect
               width='140'

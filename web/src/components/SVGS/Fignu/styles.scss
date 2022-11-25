@@ -1,1 +1,124 @@
-@import '../../../styles/_partials/_mixins.scss';
+
+
+
+.fignu2-screen1 {
+  animation: fignu2-screen1 18s ease infinite alternate;
+  @keyframes fignu2-screen1 {
+
+      0%,
+      15% {
+        opacity: 1;
+      }
+
+      20%,
+      100% {
+        opacity: 0;
+      }
+    }
+}
+
+
+
+.fignu2-screen2 {
+  animation: fignu2-screen2 18s ease infinite alternate;
+  @keyframes fignu2-screen2 {
+
+      0%,
+      15% {
+        opacity: 0;
+      }
+
+      20%,
+      35% {
+        opacity: 1;
+      }
+
+      40%,
+      100% {
+        opacity: 0;
+      }
+    }
+}
+
+
+
+.fignu2-screen3 {
+  animation: fignu2-screen3 18s ease infinite alternate;
+  @keyframes fignu2-screen3 {
+
+      0%,
+      35% {
+        opacity: 0;
+      }
+
+      40%,
+      55% {
+        opacity: 1;
+      }
+
+      60%,
+      100% {
+        opacity: 0;
+      }
+    }
+}
+
+
+
+.fignu2-screen4 {
+  animation: fignu2-screen4 18s ease infinite alternate;
+  @keyframes fignu2-screen4 {
+
+      0%,
+      55% {
+        opacity: 0;
+      }
+
+      60%,
+      75% {
+        opacity: 1;
+      }
+
+      80%,
+      100% {
+        opacity: 0;
+      }
+    }
+}
+
+
+
+.fignu2-screen5 {
+  animation: fignu2-screen5 18s ease infinite alternate;
+  @keyframes fignu2-screen5 {
+
+      0%,
+      75% {
+        opacity: 0;
+      }
+
+      80%,
+      100% {
+        opacity: 1;
+      }
+    }
+}
+
+.fignu2-icon1{
+  animation: fignu2-icon-move 3s ease 0s infinite alternate;
+}
+.fignu2-icon2 {
+  animation: fignu2-icon-move 3s ease 2s infinite alternate;
+}
+.fignu2-icon3 {
+  animation: fignu2-icon-move 3s ease 1s infinite alternate;
+}
+
+@keyframes fignu2-icon-move{
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  100%{
+    transform: translate3d(10px, -40px, 0);
+  }
+}
