@@ -29,3 +29,9 @@ export const totalApp = [
   { title: 'Sem filas, sem burocracia', body: 'Investimentos no melhor suporte para isso.Não tem filas.Economia de tempo.' },
   { title: 'Configure tudo no App', body: 'Toda a Configuração e acesso aos novos recurso a um clique de distancia' },
 ]
+
+
+export const creditBenefits = [
+  { title: 'Tecnologia Contactless', body: 'Tecnologia de pagamento por aproximação.Mias agilidade no dia a dia' },
+  { title: 'Cartão virtual', body: 'Você pode gerar cartões virtuais no app para suas compras online.Mias segurança' },
+]

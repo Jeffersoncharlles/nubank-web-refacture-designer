@@ -1,0 +1,58 @@
+@import '../../styles/_partials/mixins';
+
+.container{
+  @extend .containers;
+}
+
+.credit{
+  @extend .flex_item_1;
+
+  h2 {
+    @extend .mt-2;
+  }
+
+  >p {
+    @extend .my-2;
+  }
+
+  .list {
+      @extend .my-2;
+
+      li {
+        list-style: none;
+        position: relative;
+
+        padding: .5rem .5rem .5rem 4.5rem;
+        @extend .mt-3;
+
+        &::after {
+          content: attr(data-after);
+          position: absolute;
+
+          display: block;
+          width: 42px;
+          height: 42px;
+          top: 12px;
+          left: 8px;
+        }
+
+        &:nth-child(1) {
+          @extend .bg_icon_contactless;
+
+        }
+
+        &:nth-child(2) {
+          @extend .bg_icon_card;
+
+        }
+
+      }
+    }
+    a {
+      @extend .link-style;
+    }
+}
+
+.cards_item{
+  @extend .flex_item_1;
+}

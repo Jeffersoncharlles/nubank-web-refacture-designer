@@ -9,7 +9,7 @@ export const People = () => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.flex_item_4}>
+      <div className={styles.peopleEverybody}>
         <h5>para todos</h5>
         <h2>Completo.</h2>
         <p>Resolva seu dia a dia pelo celular.Sem filas, sem anuidade,sem tarifas abusivas.

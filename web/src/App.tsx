@@ -6,6 +6,7 @@ import { DigitalAccount } from "./pages/DigitalAccount"
 import { Hero } from "./pages/Hero"
 import { People } from "./pages/People"
 import { Testimony } from "./pages/Testimony"
+import { Card } from "./pages/Card"
 
 export const App = () => {
 
@@ -17,6 +18,7 @@ export const App = () => {
       <People />
       <Best />
       <DigitalAccount />
+      <Card />
       <Testimony />
     </>
   )

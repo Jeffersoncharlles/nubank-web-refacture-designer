@@ -5,42 +5,41 @@
   @extend .containers;
 }
 
-.flex_item_4 {
+.peopleEverybody{
+  @extend .flex_item_4;
   @extend .flex_column;
 
-  p {
-    a {
-      display: inline-block;
-      color: $primary-normal;
-      background-image: url('../../assets/icon-arrow.svg');
-      background-repeat: no-repeat;
-      background-position: 0% 50%;
-      font-size: 1.125rem;
-      padding: 1rem 1rem 1rem 2.5rem;
+  h2 {
+    @extend .mt-2;
+  }
+
+  > p {
+    @extend .my-2;
+  }
+  a{
+    @extend .link-style;
+  }
+
+  .list {
+    @extend .mt-2;
+
+    .list_item {
+      @extend .bg_icon_check;
+      list-style: none;
       position: relative;
 
+      padding: .5rem .5rem .5rem 4.5rem;
+      margin-bottom: 3rem;
+
       &::after {
-        content: "";
+        content: attr(data-after);
         position: absolute;
+
         display: block;
-        top: 75%;
-        left: 56px;
-        background-color: $secondary-light;
-        height: 2px;
-        width: 0%;
-        border-radius: 2px;
-        transition: .5s ease;
-
-      }
-
-      &:hover {
-        opacity: .8;
-        padding-left: 4rem;
-        background-position: 8px 50%;
-
-        &::after {
-          width: 100%;
-        }
+        width: 42px;
+        height: 42px;
+        top: 12px;
+        left: 8px;
       }
     }
   }
@@ -50,32 +49,6 @@
   @extend .flex_column;
   @extend .mx-2;
   @extend .my-3;
-}
-
-.list {
-  @extend .mt-2;
-
-
-
-  .list_item {
-    @extend .bg_icon_check;
-    list-style: none;
-    position: relative;
-
-    padding: .5rem .5rem .5rem 4.5rem;
-    margin-bottom: 3rem;
-
-    &::after {
-      content: attr(data-after);
-      position: absolute;
-
-      display: block;
-      width: 42px;
-      height: 42px;
-      top: 12px;
-      left: 8px;
-    }
-  }
 }
 
 

@@ -11,6 +11,6 @@ export default function SlideNextButton({ next = false, prev = false }: Props) {
     next ? swiper.slideNext() : swiper.slidePrev();
   }
   return (
-    <button onClick={handleNextOrPrev} className={next ? styles.button_next : styles.button_prev}></button>
+    <button onClick={handleNextOrPrev} title={next ? 'next slider': 'prev slider'} type='button' className={next ? styles.button_next : styles.button_prev}></button>
   );
 }
