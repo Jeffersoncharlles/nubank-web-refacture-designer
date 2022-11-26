@@ -7,6 +7,9 @@ import { Hero } from "./pages/Hero"
 import { People } from "./pages/People"
 import { Testimony } from "./pages/Testimony"
 import { Card } from "./pages/Card"
+import { PageDownload } from "./pages/PageDownload"
+import { Footer } from "./components/Footer"
+import { Invite } from "./pages/Invite"
 
 export const App = () => {
 
@@ -20,6 +23,9 @@ export const App = () => {
       <DigitalAccount />
       <Card />
       <Testimony />
+      <PageDownload />
+      <Invite />
+      <Footer />
     </>
   )
 }

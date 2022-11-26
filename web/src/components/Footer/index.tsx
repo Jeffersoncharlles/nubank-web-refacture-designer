@@ -1,12 +1,10 @@
-import {
-  ContainerFooter,
-} from './styles';
+import styles from './styles.module.scss'
 
 export const Footer = () => {
 
-  return (
-    <ContainerFooter>
+    return(
+        <footer className={styles.container}>
 
-    </ContainerFooter>
-  );
+        </footer>
+    );
 }

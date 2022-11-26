@@ -1,0 +1,24 @@
+<svg width="168" height="54" viewBox="0 0 168 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="app-store" clip-path="url(#clip0_1174_2)">
+<rect id="Rectangle 1005" width="168" height="54" rx="16" fill="#FEFBFF"/>
+<text id="Download via" fill="#232224" xml:space="preserve" style="white-space: pre" font-family="Source Sans Pro" font-size="10" letter-spacing="0em"><tspan x="64" y="23.055">Download via</tspan></text>
+<text id="App Store" fill="#232224" xml:space="preserve" style="white-space: pre" font-family="Source Sans Pro" font-size="13" font-weight="bold" letter-spacing="0em"><tspan x="64" y="36.6215">App Store</tspan></text>
+<g id="Vector 212">
+<path d="M37.0097 27.8722C36.8389 24.858 38.9487 21.7813 42.0511 21.7813C42.7655 21.7813 43.0895 21.9505 43.8676 22.1971C44.2842 22.3291 44.9902 22.696 45.3984 22.696C45.8066 22.696 46.2964 22.4257 46.9572 22.1789C47.8946 21.8287 48.449 21.7913 48.9906 21.7813C50.8072 21.7813 52.1408 22.5548 52.9911 23.7562C51.5876 24.6864 50.848 25.8142 50.8071 27.6436C50.8071 29.3066 51.8481 30.9281 53.5217 31.6557C53.1135 33.4019 50.9092 36.9983 49.0927 36.9983C48.4689 36.9619 48.0856 36.8628 47.3578 36.5825C46.8155 36.3404 46.0923 36.1667 45.6229 36.1667C45.133 36.146 44.584 36.3077 43.8982 36.5825C43.3165 36.8156 42.9699 36.9479 42.1735 36.9983C40.6631 37.0937 37.3123 33.2148 37.0097 27.8722Z" fill="url(#paint0_linear_1174_2)"/>
+<path d="M46.3781 18.5383C45.5355 19.4625 45.2147 20.6795 45.2759 21.7813C46.6638 21.6774 47.6231 21.0953 48.5008 20.0143C49.3784 18.9333 49.3849 18.1478 49.3784 17C48.3569 17.1693 47.1741 17.6652 46.3781 18.5383Z" fill="url(#paint1_linear_1174_2)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1174_2" x1="50.9609" y1="19.7" x2="37.7443" y2="32.2849" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A950C4"/>
+<stop offset="1" stop-color="#82269E"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1174_2" x1="50.9609" y1="19.7" x2="37.7443" y2="32.2849" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A950C4"/>
+<stop offset="1" stop-color="#82269E"/>
+</linearGradient>
+<clipPath id="clip0_1174_2">
+<rect width="168" height="54" fill="white"/>
+</clipPath>
+</defs>
+</svg>

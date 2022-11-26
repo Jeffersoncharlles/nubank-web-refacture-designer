@@ -1,0 +1,25 @@
+
+
+.animationAppDownload{
+  .letterU,.letterN{
+    animation: letter 6s ease infinite alternate;
+    stroke-width: 4; //grossura da linha
+    stroke-dasharray: 1 400; // tracejado a primeira e o tamanho e o segundo e a distancia
+    stroke-opacity: 0; // aparecer ou nao
+  }
+
+
+  @keyframes letter {
+    0%{
+      stroke-width: 4; //grossura da linha
+      stroke-dasharray: 1 400; // tracejado a primeira e o tamanho e o segundo e a distancia
+      stroke-opacity: 0; // aparecer ou nao
+    }
+    60%,100%{
+      stroke-width: 4; //grossura da linha
+      stroke-dasharray: 400 0; // tracejado a primeira e o tamanho e o segundo e a distancia
+      stroke-opacity: 1; // aparecer ou nao
+    }
+
+  }
+}

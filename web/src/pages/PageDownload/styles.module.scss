@@ -1,0 +1,41 @@
+@import '../../styles/_partials/mixins';
+
+
+.container{
+  @extend .containers;
+
+  .downApps {
+    @extend .flex_item_1;
+
+    h2 {
+      @extend .mt-2;
+    }
+
+    >p {
+      @extend .my-2;
+    }
+
+    &_buttons{
+      @extend .flex_start;
+
+      button{
+        @extend .w_auto;
+        border: 0;
+
+        &:hover{
+          filter: opacity(.8);
+          filter: drop-shadow(0px 51px 80px rgba(169,80,196,0.08));
+        }
+
+        &:nth-child(2){
+           @extend .ml-3;
+        }
+      }
+    }
+  }
+
+  .logoAppDown {
+    @extend .p-3;
+  }
+
+}
