@@ -6,6 +6,7 @@
 
 .credit{
   @extend .flex_item_1;
+  @extend .p-4;
 
   h2 {
     @extend .mt-2;
@@ -55,4 +56,5 @@
 
 .cards_item{
   @extend .flex_item_1;
+  @extend .p-4;
 }

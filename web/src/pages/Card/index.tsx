@@ -1,3 +1,4 @@
+import Fignu3 from '../../components/SVGS/Fignu3';
 import { creditBenefits } from '../../utils/helpers';
 import styles from './styles.module.scss'
 
@@ -25,7 +26,7 @@ export const Card = () => {
                 </p>
             </article>
             <div className={styles.cards_item}>
-
+                <Fignu3 />
             </div>
         </section>
     );
