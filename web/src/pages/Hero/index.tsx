@@ -18,10 +18,10 @@ export const Hero = () => {
         <p>Conta com rendimento acimada poupança, cartão de crédito sem anuidade e o melhor: resolva tudo pelo app.</p>
         <div>
           <Button title='Quero ser Nubank' />
-          <a href="" className={styles.btn}>
+          <a href="" className={styles.btn} title='Click download app play store' >
             <img src={AppStore} alt="Logo da AppStore onde e uma maca mordida" />
           </a>
-          <a href="" className={styles.btn}>
+          <a href="" className={styles.btn} title='Click download app play store'>
             <img src={PlayStore} alt="Logo da PlayStore onde e um triangulo de deitado para o lado direito" />
           </a>
         </div>
