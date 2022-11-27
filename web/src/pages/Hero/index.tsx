@@ -11,7 +11,7 @@ export const Hero = () => {
 
   return (
     <main className={styles.container}>
-      <section className={styles.flex_item_1}>
+      <section className={styles.flex_item_1} data-aos="fade-up" data-aos-delay="200">
         <h1>Ser Nubank é
           reinventar sua
           vida financeira. </h1>
@@ -26,7 +26,7 @@ export const Hero = () => {
           </a>
         </div>
       </section>
-      <section className={styles.flex_item_3}>
+      <section className={styles.flex_item_3} data-aos="fade-up" data-aos-delay="400">
         <img src={IconCard} alt="" className={styles.icon_card_hero} />
         <img src={IconMobile} alt="" className={styles.icon_card_mobile} />
         <img src={IconContact} alt="" className={styles.icon_card_contact} />

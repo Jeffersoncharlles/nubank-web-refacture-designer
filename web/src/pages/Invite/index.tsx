@@ -6,8 +6,8 @@ export const Invite = () => {
 
     return(
         <section className={styles.bg}>
-            <FIgnu5 className={styles.background}  />
-            <div className={styles.container}>
+            <FIgnu5 className={styles.background} data-aos="fade-up" data-aos-delay="200" />
+            <div className={styles.container} data-aos="fade-up" data-aos-delay="0">
                 <article className={styles.invite}>
                     <h5>nuconta</h5>
                     <h2>O melhor dos bancos digitais. Pra você!</h2>

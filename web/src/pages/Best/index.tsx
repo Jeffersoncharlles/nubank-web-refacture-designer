@@ -7,7 +7,7 @@ import IconCallPhone from '../../assets/icon-phone.svg'
 export const Best = () => {
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} data-aos="fade-up" data-aos-delay="200">
       <div className={styles.best}>
         <div className={styles.flex_item_auto}>
           <h5>o melhor</h5>

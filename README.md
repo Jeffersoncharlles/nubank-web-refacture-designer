@@ -35,6 +35,7 @@ This Front-End project was developed using the following technologies:
 -   [Typescript][typescript]
 -   [Sass][sass]
 -   [Swiper Js][swiperjs]
+-   [AOs Animation][osanimation]
 
 
 
@@ -49,6 +50,7 @@ Feel free to bring new features or fix problems, it will be a pleasure! 💜
 
 [typescript]: https://www.typescriptlang.org/
 [nextjs]: https://nextjs.org/
+[osanimation]: https://michalsnik.github.io/aos/
 [swiperjs]: https://swiperjs.com/react
 [next-auth]: https://next-auth.js.org/
 [vitejs]: https://vitejs.dev/

@@ -9,7 +9,7 @@ export const People = () => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.peopleEverybody}>
+      <div className={styles.peopleEverybody} data-aos="fade-up" data-aos-delay="200">
         <h5>para todos</h5>
         <h2>Completo.</h2>
         <p>Resolva seu dia a dia pelo celular.Sem filas, sem anuidade,sem tarifas abusivas.
@@ -29,11 +29,11 @@ export const People = () => {
           <a href=''>Confira os benefícios</a>
         </p>
       </div>
-      <div className={styles.flex_item_3}>
+      <div className={styles.flex_item_3} data-aos="fade-up" data-aos-delay="400">
         <ImagePeople1 />
 
       </div>
-      <div className={styles.flex_item_1}>
+      <div className={styles.flex_item_1} data-aos="fade-up" >
         <ImagePeople2 id={styles.people2} />
         <ImagePeople3 />
       </div>

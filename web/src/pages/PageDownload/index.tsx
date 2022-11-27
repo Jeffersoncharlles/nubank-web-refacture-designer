@@ -7,7 +7,7 @@ export const PageDownload = () => {
 
     return(
       <section className={styles.container}>
-        <article className={styles.downApps} >
+        <article className={styles.downApps} data-aos="fade-up" data-aos-delay="0">
           <h5>faça sua conta</h5>
           <h2>Baixe. É gratuito.</h2>
           <p>Vamos lá, junte-se aos mais de 20 milhões que escolheram o Nubank. Conte com o banco
@@ -26,7 +26,7 @@ export const PageDownload = () => {
             </button>
           </div>
         </article>
-        <div className={styles.logoAppDown}>
+        <div className={styles.logoAppDown} data-aos="fade-up" data-aos-delay="200">
           <Fignu4 />
         </div>
         </section>

@@ -6,10 +6,10 @@ export const DigitalAccount = () => {
 
   return (
     <section className={styles.container}>
-      <div className={styles.mockup}>
+      <div className={styles.mockup} data-aos="fade-up" data-aos-delay="0">
         <FigNu  />
       </div>
-      <div className={styles.appDigital}>
+      <div className={styles.appDigital} data-aos="fade-up" data-aos-delay="200">
         <h5>conta digital</h5>
         <h2>Tudo pelo App.</h2>
         <p>Nossa conta digital com mais de 20  milhões de clientes em todos o Brasil. Pague suas contas,

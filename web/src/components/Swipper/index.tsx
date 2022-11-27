@@ -17,7 +17,7 @@ export default () => {
 
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-aos="fade-up" data-aos-delay="200">
 
       <Swiper
         modules={[Autoplay]}

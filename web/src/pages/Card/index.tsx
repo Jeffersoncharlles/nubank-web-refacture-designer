@@ -6,7 +6,7 @@ export const Card = () => {
 
     return(
         <section className={styles.container}>
-            <article className={styles.credit}>
+            <article className={styles.credit} data-aos="fade-up" data-aos-delay="200">
                 <h5>seu roxinho</h5>
                 <h2>Crédito e débito</h2>
                 <p>Pode chamar ele de roxinho.Além disso,pode chamar ele de moderno, gratuito e prático
@@ -25,7 +25,7 @@ export const Card = () => {
                     <a href=''>Saiba mais</a>
                 </p>
             </article>
-            <div className={styles.cards_item}>
+            <div className={styles.cards_item} data-aos="fade-up" data-aos-delay="400">
                 <Fignu3 />
             </div>
         </section>

@@ -1,42 +1,28 @@
 .bgHomeRect1 {
-  animation: bg-home-react 7s ease 0s infinite alternate;
+  animation: bghome 7s ease 0s infinite alternate;
 }
 
 .bgHomeRect2 {
-  animation: bg-home-react 3s ease 0.5s infinite alternate;
+  animation: bghome 3s ease 0.5s infinite alternate;
 }
 
 .bgHomeRect3 {
-  animation: bg-home-react 3s ease 1s infinite alternate;
+  animation: bghome 3s ease 1s infinite alternate;
 }
 
 .bgHomeRect4 {
-  animation: bg-home-react 3s ease 1.5s infinite alternate;
+  animation: bghome 3s ease 1.5s infinite alternate;
 }
 
-// .ball1{
-//   animation:bgball 7s ease 0s infinite alternate;
-// }
-// .ball2{
-// animation: bgball 7s ease 0s infinite alternate;
-// }
-// .ball3{
-// animation:bgball 7s ease 0s infinite alternate;
-// }
-// .ball4{
-// animation: bgball 7s ease 0s infinite alternate;
-// }
+// @keyframes bghome {
+//   0% {
+//     transform: translate3d(0, 0, 0);
+//   }
 
-
-@keyframes bg-home-react {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 30px, 0);
-  }
-}
+//   100% {
+//     transform: translate3d(0, 30px, 0);
+//   }
+// }
 
 // @keyframes bgball {
 //   0% {

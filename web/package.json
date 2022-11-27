@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "gsap": "^3.11.3",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
@@ -17,6 +18,7 @@
     "swiper": "^8.4.5"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
