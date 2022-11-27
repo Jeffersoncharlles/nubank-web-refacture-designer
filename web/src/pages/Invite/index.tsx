@@ -6,7 +6,7 @@ export const Invite = () => {
 
     return(
         <section className={styles.bg}>
-            <FIgnu5 className={styles.background} />
+            <FIgnu5 className={styles.background}  />
             <div className={styles.container}>
                 <article className={styles.invite}>
                     <h5>nuconta</h5>

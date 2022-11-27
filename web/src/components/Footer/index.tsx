@@ -70,8 +70,7 @@ export const Footer = () => {
                         Rua Capote Valente, 39 - São Paulo, SP - 05409-000
                     </p>
                 </div>
-
-                <div>
+                <div className={styles.icon}>
                     <img src={Logofacebook} alt="Logotipo Facebook" />
                     <img src={Logoyoutube} alt=" Logotipo Youtube" />
                     <img src={Logoinstagram} alt=" Logotipo Instagram" />

@@ -61,14 +61,31 @@ footer{
 
 .containerSocials{
   @extend .containers;
+  @extend .py-3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-
- > div{
+  > div{
     @extend .flex_start;
 
     p {
         color: $white-light;
+        max-width: 350px;
     }
+  }
+
+  border-top: 1px solid $secondary-light;
+
+  .icon{
+
+  @extend .flex_start;
+   img{
+    max-width: 48px;
+    padding: 8px;
+    stroke: $white-light;
+
+   }
   }
 
 }

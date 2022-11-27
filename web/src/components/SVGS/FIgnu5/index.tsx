@@ -1,15 +1,16 @@
-import React from "react";
+import React, { SVGProps ,Ref} from "react";
 import styles from './styles.module.scss'
 
-interface Props extends React.HTMLAttributes<HTMLOrSVGElement> {}
+interface Props extends SVGProps<SVGSVGElement> {}
 
 
-function Icon({ ...rest }:Props) {
+function Icon({ ...rest }: Props) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       fill='none'
       viewBox='0 0 1920 1080'
+
       {...rest}
     >
       <g id='fignu5' className={styles.fignu5} clipPath='url(#clip0_1249_0)'>
