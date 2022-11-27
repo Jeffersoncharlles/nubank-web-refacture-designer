@@ -26,7 +26,7 @@ yarn dev
 ```
 
 ## PREVIEW
-<a href="#">NuBank</a>
+<a href="https://nubank-web-refacture-designer.vercel.app/">NuBank</a>
 ## 🚀 Technologies:
 
 This Front-End project was developed using the following technologies:
