@@ -7,7 +7,7 @@ interface Props {
 export const Button = ({ title }: Props) => {
 
   return (
-    <button className={styles.container}>
+    <button className={styles.container} title={title}>
       {title}
     </button>
   );

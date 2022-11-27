@@ -1,0 +1,53 @@
+@import '../../styles/_partials/mixins';
+
+
+.bg{
+  @extend .relative;
+  @extend .flex_center;
+  height: 100vh;
+
+  overflow: hidden;
+
+
+
+  .background {
+      @extend .w_auto;
+      position: absolute;
+      top: 50%; //centralizando verticalmente
+      left: 50%;
+      transform: translate(-50%,-50%);//pegar partir do centro do elemento
+
+      width: 100%;
+      z-index: -1;
+
+      @include responsive(sm){
+        transform: translate(-50%, -50%) scale(1.5);
+        //quando chegar ao ponto ele aumenta o tamanho
+        //emantem o eixo no meio
+
+      }
+  }
+}
+
+
+.container{
+  @extend .containers;
+
+  .invite{
+    @extend .flex_item_1;
+    @extend .flex_center;
+    flex-direction: column;
+
+    h2 {
+        @extend .mt-2;
+      }
+
+    >p {
+      @extend .my-2;
+    }
+
+    >button{
+      // @extend .mr-2;
+    }
+  }
+}

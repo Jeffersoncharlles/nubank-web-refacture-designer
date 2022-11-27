@@ -34,7 +34,7 @@ This Front-End project was developed using the following technologies:
 -   [Vite Js][vitejs]
 -   [Typescript][typescript]
 -   [Sass][sass]
--   [Phosphor Icons][phosphoricons]
+-   [Swiper Js][swiperjs]
 
 
 
@@ -49,6 +49,7 @@ Feel free to bring new features or fix problems, it will be a pleasure! 💜
 
 [typescript]: https://www.typescriptlang.org/
 [nextjs]: https://nextjs.org/
+[swiperjs]: https://swiperjs.com/react
 [next-auth]: https://next-auth.js.org/
 [vitejs]: https://vitejs.dev/
 [styled]: https://styled-components.com/
